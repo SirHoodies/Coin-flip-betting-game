@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+  <script src="coinflipCSS.css"></script>
+  <head>
+    <style type="text/css">
+        
+  body {
+    font-family: OCR A Std, monospace;
+    background-color: #aaa;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  
+  
+  #story {
+    font-family: OCR A Std, monospace;
+    margin-top: 10px;
+    width: 25%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+    left: 34%;
+    background-color: white;
+    position: absolute;
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(36, 36, 36);
+    
+  }
+  
+  #score {
+    font-family: OCR A Std, monospace;
+    width: 20%;
+    box-shadow: 5px 5px rgb(36, 36, 36);
+    border-radius: 10px;
+    padding: 20px;
+    left: 50%;
+    top: 90%;
+    background-color: white;
+    position: absolute;
+    font-size: 40px;
+  }
+
+  h3{
+    margin: 0 50px;
+    font-size: 50px;
+  }
+
+  button{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 24.5%;
+    outline: none;
+    border-style: none;
+    font-size: 40px;
+    background-color: white;
+    box-shadow: 5px 5px rgb(36, 36, 36);
+    border-radius: 10px;
+  }
+
+  button:hover{
+    background-color: lightgray;
+  }
+
+  .guess-area{
+    width:100%;
+    background-color: white;
+    position: absolute;
+    box-shadow: 5px 5px rgb(36, 36, 36);
+    border-radius: 10px;
+  }
+
+  h4{
+    font-size: 40px;
+    position: absolute;
+    left: 20%;
+  }
+  #submit{
+    font-family: OCR A Std, monospace;
+  }
+  
+  </style>
+    <title>Coin Flip Bet!</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Coin Flip Bet!
+      </h1>
+    </header>
+    <h3>
+      Please Enter Guess
+    </h3>
+    <br>
+    <div class="guess-area">
+      <p>
+        Guess:<input type="radio" name="guessSide" value="Heads" checked>Heads
+        <input type="radio" name="guessSide" value="Tails">Tails
+      </p>
+    </div><br>>
+    <ul>
+      <div id="story"></div><br><br><br><br><br><br>
+      <button type="submit" id="submit"><strong>Play!</strong></button><br><br>
+    </ul>
+    <h4>
+     Points: 
+    </h4>
+    <div id="score"></div><br><br><br><br>
+    <script src="coinflipJS.js"></script>
+  </body>
+</html>
